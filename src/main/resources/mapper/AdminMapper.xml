@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lmh.firstpro.dao.AdminDao">
+    <!--  关系映射  -->
+<!--    <resultMap id="BaseResultMap" type="com.lmh.firstpro.pojo.Admin">-->
+<!--        <result column="pk_adminid" property="pk_adminid" jdbcType="INTEGER"/>-->
+<!--        <result column="admin_name" property="admin_name" jdbcType="VARCHAR"/>-->
+<!--        <result column="admin_pwd" property="admin_pwd" jdbcType="VARCHAR"/>-->
+<!--        <result column="admin_institudeid" property="admin_institudeid" jdbcType="INTEGER"/>-->
+<!--        <result column="create_time" property="create_time" jdbcType="DATE"/>-->
+<!--        <result column="modify_time" property="modify_time" jdbcType="DATE"/>-->
+<!--    </resultMap>-->
+
+    <select id="getAdminMessage" resultType="com.lmh.firstpro.pojo.Admin">
+select * from admin ;
+--         select * from admin where pk_adminid = #{adminid} and admin_pwd = #{password};
+    </select>
+
+
+</mapper>
